@@ -1,0 +1,545 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#body {
+   width: calc(100vw - (100vw - 100%));
+}
+
+:root { 
+  /* Colores */
+  --color-1: #575756;
+  --color-2: #b5976b;
+  --color-3: #666666;
+  --color-4: #ffb3e7;
+  --color-5: #ffffff;
+  --color-6: #3bb7b2;
+  
+  /* Fuentes */
+  --fuente-1: "DM Serif Display", serif;
+  --fuente-2: "Lora", serif;
+  --fuente-3: "DM Sans", sans-serif;
+  --fuente-4: "Fraunces", serif;
+  --fuente-5: "Playfair Display", serif;
+  --fuente-6: "Open Sans", sans-serif;
+  --fuente-7: "Dancing Scfont-familyript", Sans-serif;
+  --fuente-8: 'Arizonia', cursive;
+  
+  /* Grosor de fuente */
+  --weight-font-regular: 400;
+  --weight-font-medium: 500;
+  --weight-font-bolt900: 900;
+}
+
+
+
+/* Portada */
+section.portada {
+  max-width: 100%;
+  background-image: url("../img/portada-smart.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  /* padding-top: 90px; */
+  position: relative;
+  align-content: center;
+  align-items: center;
+  }
+
+/* mis 15 */
+section.portada .content-portada h2 {
+  font-family: var(--fuente-5);
+  font-weight: var(--weight-font-medium);
+  color: var(--color-5);
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+
+  position: absolute;
+  top: 5.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* Carme */
+section.portada .content-portada h1 {
+  font-family: var(--fuente-8);
+  color: var(--color-5);
+  font-weight: var(--weight-font-medium);
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* fecha */
+section.portada .content-portada span.fecha {
+  font-family: var(--fuente-5);
+  font-weight: var(--weight-font-medium);
+  color: var(--color-5);
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+
+  position: absolute;
+  top: 14rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* texto portada */
+section.portada .box-frase-portada p {
+  font-family: "Poppins", Sans-serif;
+  font-weight: var(--weight-font-medium);
+  color: var(--color-5);
+  font-weight: 300;
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+
+  position: absolute;
+  top: 18rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* mariposa de portada */
+/* section.portada .box-nombres-fecha-portada img {
+  width: 150px;
+} */
+
+
+
+
+.flecha {
+  position: absolute;
+  top: 39rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* -------  Reloj Contador  -------- */
+section.clock_cont {
+  background-color: #e7f5f2;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding: 25px 10px;
+}
+section.clock_cont .countdown {
+  margin: 0 0 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4c4c4c;
+  font-family: "Dancing Script", Sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+  text-transform: none;
+}
+section.clock_cont .countdown .time {
+  padding: 0 10px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- cena y fiesta -------------- */
+section.cena {
+  /* background: linear-gradient(to bottom, rgba(163, 27, 27, 0.5),rgba(78, 4, 4, 0.5)),url("../img/corazones_fondo.jpg"); */
+  background-image: url("../img/fondo.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  position: relative;
+  align-content: center;
+  align-items: center;
+}
+
+/* ---------- dress -------------- */
+
+section.dress {
+  /* background: linear-gradient(to bottom, rgba(78, 4, 4, 0.5),rgba(163, 27, 27, 0.5)),url("../img/corazones_fondo.jpg"); */
+  background-image: url("../img/fondo.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  position: relative;
+  align-content: center;
+  align-items: center;
+}
+
+/* ---------- confirmar -------------- */
+
+section.confirmar {
+  background-image: url("../img/fondo.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  position: relative;
+  align-content: center;
+  align-items: center;
+}
+
+/* ---------- album -------------- */
+
+section.album {
+  background-image: url("../img/fondo.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  position: relative;
+  align-content: center;
+  align-items: center;
+}
+
+/* ---------- canciones que no pueden faltar -------------- */
+
+section.canciones {
+  background-image: url("../img/fondo.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  position: relative;
+  align-content: center;
+  align-items: center;
+}
+
+/* ---------- regalos -------------- */
+
+section.regalos {
+  background-image: url("../img/fondo.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 55vh;
+  padding-top: 1px;
+  position: relative;
+  align-content: center;
+  align-items: center;
+}
+
+/* ---------- instagram -------------- */
+
+section.instagram {
+  background-image: url("../img/instagram.jpg");
+  /* background: linear-gradient(to bottom, rgb(0 0 0 / 0.25), rgb(0 0 0 / 0.1)),
+    url("../img/instagram.jpg"); */
+  /* opacity: .55; */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  position: relative;
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  
+  position: relative;
+  align-items: center;
+
+  padding-top: 35%;
+  padding-bottom: 50%;
+}
+
+.modo-hashtag {
+  position: absolute;
+  top: 13rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  color: #ffffff;
+  font-family: "Dancing Scfont-familyript", Sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
+.hashtag_mode {
+  position: absolute;
+  top: 15rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 32px;
+  font-weight: 420;
+  /* text-transform: uppercase; */
+  /* padding-top: 10rem; */
+}
+
+
+/* ---------- los espero -------------- */
+
+section.los_espero {
+  background-image: url("../img/fondo.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 30%;
+  padding: 20px 0 15px 0;
+  position: relative;
+  align-content: center;
+  align-items: center;
+}
+
+
+/* ---------- footer -------------- */
+
+section.footer {
+  text-align: center;
+  width: 100%;
+  height: 30%;
+  position: relative;
+  align-content: center;
+  align-items: center;
+}
+
+.prop_ico {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_description {
+  font-family: "Poppins", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.t_title {
+  margin-bottom: 15px;
+  color: #4c4c4c;
+  font-family: "Dancing Script", Sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.t_color {
+  color: #ffb3e7;
+}
+
+.confirmar_asistencia {
+  color: #8c788d;
+  font-family: "Poppins", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.elementor-button-wrapper {
+  border-style: solid;
+  text-decoration: none;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 0;
+}
+.elementor-button-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.elementor-button-text {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-ordinal-group: 11;
+  -ms-flex-order: 10;
+  order: 10;
+  display: inline-block;
+}
+
+
+/* footer */
+.elementor-widget-container {
+  margin: 0;
+  padding: 20px 0 20px;
+  background-color: var(--color-4);
+}
+
+.header-first-span {
+  color: #565d6a;
+  font-size: 15px;
+  text-transform: none;
+}
+.header-second-header {
+  font-size: 15px;
+  color: rgb(5, 51, 98);
+}
+
+/* boton */
+.button {
+  padding: 15px 30px;
+}
+
+.btn {
+  width: 180px;
+  border-radius: 50px;
+  display: inline-block;
+  padding-top: 20px;
+  text-decoration: none;
+
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn_music {
+  width: 250px;
+  border-radius: 50px;
+  display: inline-block;
+  padding-top: 20px;
+  text-decoration: none;
+
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn_green {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  fill: #ffb3e7;
+  border-style: solid;
+  border-width: 3px;
+  background-color: var(--color-6);
+  padding: 15px;
+}
+
+/* Boton musica */
+.btn-ms{
+  color: rgb(92, 9, 9);
+  fill-opacity: 1;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  position:fixed;
+  bottom: -45px;
+  right:-45px;
+  /* border-radius:50px; */
+  z-index:100;
+  /* transition: all 300ms ease; */
+}
+
+
+/*--------- Boton-Modal--------*/
+/*:::Ventana Modal:::*/
+#btn-modal{
+  display: none;
+}
+.container-modal{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+#btn-modal:checked ~ .container-modal{
+  display: flex;
+}
+.content-modal{
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.content-modal h2{
+  margin-bottom: 15px;
+}
+.content-modal p{
+  padding: 15px 0px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.content-modal .btn-cerrar{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+  padding: 7px 10px;
+  background-color: #5488a3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover{
+  background-color:#185E83;
+}
+.cerrar-modal{
+  width:100%;
+  height: 100vh;
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+}
+@media screen and (max-width:800px) {
+  .content-modal{
+      width: 90%;
+  }
+}
+/*:::Fin Ventana Modal:::*/
+

@@ -1,0 +1,71 @@
+/* Mobile */
+@media (max-height: 690px) {
+  section.regalos {
+    height: 65vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+    .contenedor-body {
+      max-width: 1024px;
+      margin: 0 auto;
+      background-color: #e1f0eb;
+   }
+
+  /* Mis 15 */
+   section.portada .content-portada h2 {
+    font-size: 30px;
+    top: 6rem;
+  }
+  
+  /* Carme */
+  section.portada .content-portada h1 {
+    font-size: 100px;
+    top: 12rem;
+  }
+  
+  /* fecha */
+  section.portada .content-portada span.fecha {
+    font-size: 30px;
+    top: 17rem;
+  }
+  
+  /* texto portada */
+  section.portada .box-frase-portada p {
+    font-size: 20px;
+    top: 20rem;
+  }
+  .flecha {
+    top: 55rem;
+  }
+
+  section.regalos {
+    height: 55vh;
+  }
+
+  .modo-hashtag {
+    font-size: 24px;
+    top: 42rem;
+  }
+  .hashtag_mode {
+    font-size: 45px;
+    top: 45rem;
+  }
+/*:::Ventana Modal:::*/
+  .content-modal{
+    max-width: 720px;
+  }
+  .content-modal h2{
+    font-size: 35px;
+  }
+  .content-modal p{
+    padding: 25px 0px;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+  }
+  
+  } 
+  
+  
+

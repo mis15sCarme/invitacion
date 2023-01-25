@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Mis 15</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/carousel.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/responsive.css'>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arizonia&family=Dancing+Script:wght@500&family=League+Spartan&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+
+  <!-- Script Js -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src='main.js'></script>
+
+</head>
+
+<body class="contenedor-body">
+  
+  <!-- Sonido de fondo -->
+
+  <button class="btn-ms" onclick="playOrPause()">
+    <lottie-player class="prop_ico" src="https://assets4.lottiefiles.com/private_files/lf30_kkuzugtw.json"
+      background="transparent" speed="1" style="width: 170px; height: 170px;" loop autoplay
+      align-items=center></lottie-player>
+  </button>
+
+  <script>
+    let isPlaying = 0;
+    let audio;
+    // console.log("creando audio");
+    audio = new Audio();
+    audio.src = "Enchanted.mp3"
+
+    function playOrPause() {
+      if (audio.readyState < 2 /*HAVE_CURRENT_DATA*/) {
+        console.log("no está listo aún");
+        if (audio.error) {
+          console.log("error : " + audio.error.code + " -> " + audio.error.message);
+        }
+        return (0);
+      }
+      isPlaying = isPlaying + 1;
+      console.log(isPlaying);
+      if (isPlaying == 1) {
+        audio.play();
+        console.log("playing");
+      } else {
+        audio.pause();
+        console.log("paused");
+        isPlaying = 0;
+      }
+      return (isPlaying);
+    }
+  </script>
+
+  <!-- // ----------------------- // -->
+
+  <!-- head photo -->
+  <section class="portada">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="content-portada text-center">
+
+          <div class="box-nombres-fecha-portada">
+            <!-- <img class="mariposa_1" src="./img/mariposa_1.png" alt="" /> -->
+            <h2>Mis 15 años</h2>
+            <h1>Carme</h1>
+            <span class="fecha">10.03.2023</span>
+          </div>
+
+          <div class="box-frase-portada">
+
+            <!-- <lottie-player class="prop_ico" src="https://assets7.lottiefiles.com/packages/lf20_rqo8mcum.json"
+              background="transparent" speed="1" style="width: 170px; height: 70px;" loop autoplay
+              align-items=center></lottie-player> -->
+
+              
+                <p>Te espero para compartir una noche que será mágica e inolvidable. <br /></p>
+              
+
+            <!-- <lottie-player class="prop_ico" src="https://assets7.lottiefiles.com/packages/lf20_rqo8mcum.json"
+              background="transparent" speed="1" style="width: 170px; height: 70px;" loop autoplay
+              align-items=center></lottie-player> -->
+          </div>
+
+          <div class="flecha">
+            <lottie-player class="prop_ico" src="https://assets7.lottiefiles.com/packages/lf20_adusoacp.json"
+              background="transparent" speed="1" style="width: 170px; height: 70px;" loop autoplay
+              align-items=center></lottie-player>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Reloj Contador -->
+  <section class="clock_cont">
+    <div id="countdown" class="countdown">
+      <div class="time">
+        <h2 class="days">00</h2>
+        <small>Dias</small>
+      </div>
+      <div class="time">
+        <h2 class="hours">00</h2>
+        <small>Horas</small>
+      </div>
+      <div class="time">
+        <h2 class="minutes">00</h2>
+        <small>Minutos</small>
+      </div>
+      <div class="time">
+        <h2 class="seconds">00</h2>
+        <small>Segundos</small>
+      </div>
+
+
+      <div class="clockHour">
+        <div class="hr" id="hr"></div>
+      </div>
+      <div class="clockMin">
+        <div class="mn" id="mn"></div>
+      </div>
+      <div class="clockSec">
+        <div class="sc" id="sc"></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="cena">
+
+    <lottie-player class="prop_ico" src="https://assets3.lottiefiles.com/packages/lf20_qeOcB1IyPk.json"
+      background="transparent" speed="1" style="width: 170px; height: 170px;" loop autoplay
+      align-items=center></lottie-player>
+
+    </div>
+    <div class="">
+      <h3 class="t_title"><span> Cena y fiesta </span></h3>
+      <p class="text_description">
+        Los espero a las 21:00 hs en el 'Salon Estancia Causana', Colectora ruta 20 km 18, Malagueño, Córdoba.
+      </p>
+    </div>
+
+    <div class="">
+      <div class="button">
+        <a target="_blank" href="https://goo.gl/maps/fkUsvkaH35pbsWcJ9" class="btn btn_green" role="button">
+          <span class="">ver mapa</span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="dress">
+    <lottie-player class="prop_ico" src="https://assets1.lottiefiles.com/packages/lf20_7tmshh70.json"
+      background="transparent" speed="1" style="width: 220px; height: 220px" loop autoplay align-items=center>
+    </lottie-player>
+
+    <div class="">
+      <h3 class="t_title"><span> Dress Code </span></h3>
+      <p class="text_description">
+        El código de vestimenta de mi fiesta será Elegante
+      </p>
+    </div>
+  </section>
+
+  <section class="confirmar">
+    <lottie-player class="prop_ico" src="https://assets1.lottiefiles.com/packages/lf20_bblvf1.json"
+      background="transparent" speed="1" style="width: 170px; height: 170px" loop autoplay align-items=center>
+    </lottie-player>
+
+    <div class="">
+      <h3 class="t_title">Confirmar Asistencia</h3>
+      <p class="text_description">
+        Confirmar antes del 01 de Marzo
+      </p>
+    </div>
+
+
+    <!-- confirmar con boton -->
+    <div class="">
+      <div class="button">
+        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScfs_DpRa0c2nSaiRD8y5H__bj924WVwfIjTeh-GYqhz1bJHQ/viewform?embedded=true" class="btn btn_green" role="button">
+          <span class="">CONFIRMAR</span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- album de fotos  -->
+  <section class="album">
+    <div class="">
+      <h3 class="t_title"><span> Mi album </span></h3>
+    </div>
+
+    <div class="">
+      <div class="carousel">
+        <input type="radio" id="carousel-1" name="carousel[]" checked>
+        <input type="radio" id="carousel-2" name="carousel[]">
+        <input type="radio" id="carousel-3" name="carousel[]">
+        <input type="radio" id="carousel-4" name="carousel[]">
+        <input type="radio" id="carousel-5" name="carousel[]">
+        <ul class="carousel__items">
+          <li class="carousel__item"><img src="./img/galeria/5.jpg" alt=""></li>
+          <li class="carousel__item"><img src="./img/galeria/2.jpg" alt=""></li>
+          <li class="carousel__item"><img src="./img/galeria/1.jpg" alt=""></li>
+          <li class="carousel__item"><img src="./img/galeria/3.jpg" alt=""></li>
+          <li class="carousel__item"><img src="./img/galeria/4.jpg" alt=""></li>
+        </ul>
+        <div class="carousel__prev">
+          <label for="carousel-1"></label>
+          <label for="carousel-2"></label>
+          <label for="carousel-3"></label>
+          <label for="carousel-4"></label>
+          <label for="carousel-5"></label>
+        </div>
+        <div class="carousel__next">
+          <label for="carousel-1"></label>
+          <label for="carousel-2"></label>
+          <label for="carousel-3"></label>
+          <label for="carousel-4"></label>
+          <label for="carousel-5"></label>
+        </div>
+        <div class="carousel__nav">
+          <label for="carousel-1"></label>
+          <label for="carousel-2"></label>
+          <label for="carousel-3"></label>
+          <label for="carousel-4"></label>
+          <label for="carousel-5"></label>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section class="canciones">
+    <lottie-player class="prop_ico" src="https://assets8.lottiefiles.com/packages/lf20_b8ofyxmg.json"
+      background="transparent" speed="1" style="width: 170px; height: 170px" loop autoplay align-items=center>
+    </lottie-player>
+
+    <div class="">
+      <h3 class="t_title"><span> ¿Canciones que no pueden faltar? </span></h3>
+    </div>
+
+    <div class="text_description">
+      <p>Puedes recomendar canciones o artistas que no pueden faltar en mi fiesta</p>
+    </div>
+    <!-- sugerir la musica Boton para el formulario -->
+
+    <div class="">
+      <div class="button">
+        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfU0XOviItO2iMFoYNnkSElg5Qb4kcdCAfSt-uvtIrwC0v89A/viewform?usp=sf_link" class="btn_music btn_green" role="button">
+          <span class="">SUGERIR MUSICA</span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="regalos">
+    <lottie-player class="prop_ico" src="https://assets8.lottiefiles.com/private_files/lf30_zn0soefi.json"
+      background="transparent" speed="1" style="width: 170px; height: 170px" loop autoplay align-items=center>
+    </lottie-player>
+
+    <div class="">
+      <h3 class="t_title"><span> Regalo </span></h3>
+    </div>
+    <div class="text_description">
+      <p>Lo más importante es tu presencia, pero si
+        quieres también puedes hacerme un regalo.</p>
+    </div>
+
+
+    <!-- Regalo con boton -->
+      <div class="button">
+        <label for="btn-modal" class="btn_music btn_green">
+            Regalar
+        </label>
+      </div>
+
+    <!--Ventana Modal-->
+    <input type="checkbox" id="btn-modal">
+    <div class="container-modal">
+        <div class="content-modal">
+            <h2>Datos bancarios</h2>
+            <p>Maria Carmela Caruso Filafilo
+              CVU: 0000003100085668323388
+              Alias: carmeliiita
+              CUIT/CUIL: 27485347734
+              Mercado Pago</p>
+            <div class="btn-cerrar">
+                <label for="btn-modal"> Cerrar </label>
+            </div>
+        </div>
+        <label for="btn-modal" class="cerrar-modal"></label>
+    </div>
+    <!--Fin de Ventana Modal-->
+ 
+  </section>
+
+  <section class="instagram">
+    <div class="">
+      <h4 class="modo-hashtag">
+        En la fiesta, subi las fotos etiquetando a:
+      </h4>
+    </div>
+    <div class="">
+      <h3 class="hashtag_mode">
+        @mis15bycarme
+      </h3>
+    </div>   
+  </section>
+
+
+  <section class="los_espero">
+    <div class="">
+      <h3 class="t_title"><span> Los Espero! </span></h3>
+    </div>
+  </section>
+
+
+  <section class="footer">
+    <div class="elementor-widget-container">
+      <a href="">
+        <h6 class="">
+          <span class="header-first-span">Realizado por </span><span class="header-second-header">Plano Software</span>
+        </h6>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Script js -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
